@@ -1,1 +1,14 @@
-{{outlet}}
+<div class="row search-box">
+  {{input
+    value=query
+    class="input-lg form-control"
+    placeholder="Enter a name"}}
+</div>
+
+{{#each filteredClimbers as |climber|}}
+  <div class="row">
+    <div class="col-lg-12">
+      {{climber-info climber=climber}}
+    </div>
+  </div>
+{{/each}}
