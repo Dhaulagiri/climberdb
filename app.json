@@ -1,0 +1,16 @@
+{
+  "name": "ClimberDB",
+  "description": "ClimberDB",
+  "env": {
+    "EMBER_ENV": {
+      "description": "Environment desired for ember-cli builds",
+      "value": "production"
+    },
+    "NODE_ENV": "production"
+  },
+  "buildpacks": [
+    { "url": "https://github.com/heroku/heroku-buildpack-nodejs" },
+    { "url": "https://github.com/jmonster/heroku-buildpack-ember-cli-env" },
+    { "url": "https://github.com/hone/heroku-buildpack-static" }
+  ]
+}
