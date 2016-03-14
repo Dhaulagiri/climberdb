@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'climberdb',
     environment: environment,
     contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://climberdb.firebaseio.com/',
+    firebase: process.env.API_URL,
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
