@@ -1,5 +1,6 @@
 {
   "name": "ClimberDB",
+  "stack": "heroku-16",
   "description": "ClimberDB",
   "env": {
     "EMBER_ENV": {
